@@ -54,5 +54,9 @@ console.log(whoIs);
 function consoleErr (errMsg: string): void {
     console.log(errMsg);
 }
+function handleErr (errMsg: string): never {
+    throw new Error(errMsg);
+}
+
 
 export{}
