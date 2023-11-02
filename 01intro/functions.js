@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 //Number function
 function addTwo(num) {
     return num + 2;
@@ -26,9 +28,17 @@ function addTree(num) {
     return num + 3;
 }
 addTree(5);
-function getValue(myValue) {
-    if (myValue > 5) {
-        return true;
-    }
-    return '200 ok';
-}
+// function getValue (myValue: number): boolean {
+//     if (myValue > 5) {
+//         return true;
+//     }
+//     return '200 ok';
+// }
+var getHello = function (s) {
+    return '';
+};
+var heros = ['thor', 'spiderman', 'ironman'];
+var whoIs = heros.map(function (hero) {
+    return "A hero is ".concat(hero);
+});
+console.log(whoIs);

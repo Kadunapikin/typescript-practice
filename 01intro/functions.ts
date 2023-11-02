@@ -42,3 +42,17 @@ addTree(5);
 const getHello = (s: string): string => {
     return ''
 }
+
+//mapping through an arrow function
+const heros = ['thor', 'spiderman', 'ironman']
+const whoIs = heros.map((hero) => {
+    return `A hero is ${hero}`
+})
+console.log(whoIs);
+
+//Dealing with errors
+function consoleErr (errMsg: string): void {
+    console.log(errMsg);
+}
+
+export{}
