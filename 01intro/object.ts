@@ -37,7 +37,8 @@ type User = {
     readonly _id: string  //when you don't want anyone to have access to this on the data base
     name: string;
     email: string;
-    isActive: boolean
+    isActive: boolean;
+    creaditCard?: number //Adding an optional variable
 }
 
 let myUser: User = {
