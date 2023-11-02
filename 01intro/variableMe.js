@@ -6,5 +6,7 @@ greeting.toLowerCase;
 console.log(greeting);
 //Number
 var userId = 13927;
-var numberMethod = userId.toLocaleString;
+var numberMethod = userId.toLocaleString();
 console.log(numberMethod);
+//boolean
+var isLoggedIn = false;
