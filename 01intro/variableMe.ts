@@ -1,9 +1,13 @@
+//String
 let greeting: string = 'Hello Isaac';
-
-let myNum = 6
-
 greeting.toLowerCase
-
 console.log(greeting);
+
+//Number
+let userId: number = 13927;
+const numberMethod = userId.toLocaleString;
+console.log(numberMethod);
+
+
 
 export {}
