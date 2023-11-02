@@ -9,3 +9,7 @@ function createPerson(_a) {
     var string = _a.name, boolean = _a.isPaid;
 }
 createPerson({ name: 'Abel', isPaid: false });
+//Function to return an object
+function createCourse() {
+    return { name: 'reactJs', price: 399 };
+}
