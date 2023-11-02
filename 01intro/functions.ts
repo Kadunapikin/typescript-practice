@@ -17,3 +17,12 @@ function signUpUser (name: string, email: string, isPaid: boolean) {
 
 }
 signUpUser('Isaac', 'ibakoshi27@gmail.com', false);
+
+//working with multipls parameter function but need to pass less argurment
+const loginUser = (name: string, email: string, isPaid: boolean = false) => {
+    if (isPaid === void 0) {
+        isPaid = false;
+    }
+};
+
+loginUser('Isaac', 'i@i.com')
