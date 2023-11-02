@@ -31,3 +31,14 @@ function addTree (num: number): number {
     return num + 3;
 }
 addTree(5);
+
+// function getValue (myValue: number): boolean {
+//     if (myValue > 5) {
+//         return true;
+//     }
+//     return '200 ok';
+// }
+
+const getHello = (s: string): string => {
+    return ''
+}

@@ -23,6 +23,12 @@ var loginUser = function (name, email, isPaid) {
 loginUser('Isaac', 'i@i.com');
 //Checking return values
 function addTree(num) {
-    return 'Izo';
+    return num + 3;
 }
 addTree(5);
+function getValue(myValue) {
+    if (myValue > 5) {
+        return true;
+    }
+    return '200 ok';
+}
