@@ -13,4 +13,14 @@ function createCourse ():{name: string, price: number} {
     return {name: 'reactJs', price: 399}
 }
 
+//weird object behavior
+function createPet ({name: string, isPaid: boolean}) {
+}
+// createPet({name: 'cat', isPaid: false, color: white}); 
+//passing another argurment isn't possible because it's not among the parameters. however, saving it in a variable 
+const newPet = {name: 'cat', isPaid: false, color: 'white'}; 
+createPet(newPet);
+
+
+
 export {}
