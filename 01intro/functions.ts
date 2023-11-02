@@ -24,5 +24,10 @@ const loginUser = (name: string, email: string, isPaid: boolean = false) => {
         isPaid = false;
     }
 };
-
 loginUser('Isaac', 'i@i.com')
+
+//Checking return values
+function addTree (num: number): number {
+    return num + 3;
+}
+addTree(5);
