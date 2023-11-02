@@ -10,3 +10,6 @@ function getUper(val) {
 }
 var caps = getUper('masqured');
 console.log(caps);
+function signUpUser(name, email, isPaid) {
+}
+signUpUser(1, 2, 3);

@@ -13,3 +13,7 @@ function getUper(val: string) {
  const caps = getUper('masqured');
  console.log(caps);
  
+function signUpUser (name: string, email: string, isPaid: boolean) {
+
+}
+signUpUser('Isaac', 'ibakoshi27@gmail.com', false);
