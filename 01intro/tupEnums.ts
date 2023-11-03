@@ -11,4 +11,11 @@ let rgb: [number, number, number] = [255,255,255];
 type User = [number, string]
 const newUser: User = [244, 'i@i.com']
 
+//it is possible to rewrite the string or even use an array method to push a string into the tupel array
+newUser[1] = 'izo@i.com'; 
+
+newUser.push(13927);
+
+console.log(newUser);
+
 export {}
