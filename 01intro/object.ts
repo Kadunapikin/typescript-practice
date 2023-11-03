@@ -52,4 +52,17 @@ let myUser: User = {
 myUser.email = 'm@m.com';
 // myUser._id = '13927'; // Won't work coz its read only
 
+//using existing type to define a new type
+type cardNumber = {
+    cardnumber: string
+}
+
+type cardDate = {
+    carddate: string
+}
+
+type cardDetails = cardDate & cardNumber & {
+    cvv:number
+}
+
 export {}
