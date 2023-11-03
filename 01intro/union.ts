@@ -32,5 +32,11 @@ function getDbId (id: string | number) {
 }
 
 
+//working with union in an array
+const data: number[] = [1,2,3];
+const data1: string[] = ['1','2','3'];
+const data2: (number | string)[] = [1,2,'3','4'];
+
+
 
 export {}
