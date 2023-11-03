@@ -18,11 +18,18 @@ Isaac = {userName: 'Iceman', id: 13927}
 
 
 //working with functions
-function getDbId (id: string | number) {
-    console.log(`The DB id is ${id}`);
-}
+// function getDbId (id: string | number) {
+//     console.log(`The DB id is ${id}`);
+// }
 getDbId(5);
 getDbId('7');
+
+//A check must be added before a method can be used on variable that has a union
+function getDbId (id: string | number) {
+    if (id === 'string') {
+        id.toUpperCase()
+    }
+}
 
 
 
