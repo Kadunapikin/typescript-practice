@@ -7,3 +7,6 @@ superHeroes.push('superman', 'ironman');
 heroePower.push(2, 3, 4);
 console.log(superHeroes);
 console.log(heroePower);
+var allUsers = [];
+allUsers.push({ name: 'Izo', isActive: false });
+console.log(allUsers);
