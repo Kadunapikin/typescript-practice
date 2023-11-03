@@ -16,4 +16,14 @@ type Admin = {
 let Isaac: User | Admin = {name: 'Bakoshi', id: 13927}
 Isaac = {userName: 'Iceman', id: 13927}
 
+
+//working with functions
+function getDbId (id: string | number) {
+    console.log(`The DB id is ${id}`);
+}
+getDbId(5);
+getDbId('7');
+
+
+
 export {}
