@@ -11,8 +11,13 @@ interface User {
 const Izo: User = {dbId: 22, email: 'i@i.com', userId: 13927,
 startTrial: () => {
     return 'Trial started'
-},
+}, githubToken: '',
 getCoupon: (name: 'Iceman', off: 15) => {
     return 15
 }
+}
+
+//Reopning the interface
+interface User {  //you can add more id to already created interface
+    githubToken: string
 }
