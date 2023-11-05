@@ -20,7 +20,7 @@ class User {
         this.name = name;
         this.age = age;
         this.userId = userId;
-        this._courseCount = 1;
+        this._courseCount = 1; //changing this access modifier from private to protected will make accessible to another class that extends User but not outside the User class
         this.city = ''; //if you're adding a city then you need to initialize it
     }
     //adding a getter
@@ -41,3 +41,13 @@ class User {
 const Isaac = new User("i@i.com", "isaac", 32, "123");
 Isaac.city = "kadaCity"; //I can Have access to the city
 Isaac.age; //Only public properties and the ones not assigned the private keywords can be accessed outside the class
+//working with protected access modifier
+class subUser extends User {
+    constructor() {
+        super(...arguments);
+        this.isFamily = true;
+    }
+    changeCourseCount() {
+        this._courseCount = 4;
+    }
+}

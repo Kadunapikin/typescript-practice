@@ -16,7 +16,7 @@ console.log("typescript is amazing");
 
 //A shorter way to write thesame code
 class User {
-    private _courseCount = 1
+    protected _courseCount = 1   //changing this access modifier from private to protected will make accessible to another class that extends User but not outside the User class
     city: string = ''  //if you're adding a city then you need to initialize it
     constructor (
         public email: string, 
@@ -46,3 +46,12 @@ class User {
 const Isaac = new User("i@i.com", "isaac", 32, "123");
 Isaac.city = "kadaCity"  //I can Have access to the city
 Isaac.age  //Only public properties and the ones not assigned the private keywords can be accessed outside the class
+
+//working with protected access modifier
+
+class subUser extends User {
+    isFamily: boolean = true
+    changeCourseCount() {
+        this._courseCount = 4
+    }
+}
