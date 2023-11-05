@@ -6,6 +6,10 @@ abstract class TakePhoto {   //As soon as abstract is added, it becomes impossib
 
     //adding a method to an abstract class
     abstract getSapia(): number
+    getReelTime(): number {
+        //complex calculations
+        return 7
+    }
 }
 
 //creating an object from the class before abstract was added to it
