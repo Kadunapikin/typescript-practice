@@ -3,6 +3,9 @@ abstract class TakePhoto {   //As soon as abstract is added, it becomes impossib
         public cameraMode: string,
         public shots: number
     ) {}
+
+    //adding a method to an abstract class
+    abstract getSapia(): number
 }
 
 //creating an object from the class before abstract was added to it
@@ -15,6 +18,10 @@ class Youtube extends TakePhoto {
         public filter: string
     ) {
         super(cameraMode, shots)  //You need to add this super before it stops giving you error
+    }
+
+    getSapia(): number {
+        return 32;
     }
 }
 
