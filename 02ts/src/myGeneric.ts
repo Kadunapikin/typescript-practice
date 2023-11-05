@@ -18,3 +18,16 @@ function identityThree<type>(val: type): type {
 }
 
 identityThree(true)  //whatever data type you passed in, it converts the type into that data type
+
+//using the generic in your own created data (interface)
+interface Love {
+    name: string,
+    age: number
+}
+
+function identityFour<T> (val: T): T {
+    return val
+}
+
+identityFour<Love>({})
+
