@@ -20,11 +20,22 @@ class User {
         this.name = name;
         this.age = age;
         this.userId = userId;
+        this._courseCount = 1;
         this.city = ''; //if you're adding a city then you need to initialize it
     }
     //adding a getter
     get getAppleEmail() {
         return `apple ${this.email}`;
+    }
+    //adding a setter
+    get courseCount() {
+        return this._courseCount;
+    }
+    set courseCount(courseNum) {
+        if (courseNum <= 1) {
+            throw new Error("Course count should be more than 1");
+        }
+        this._courseCount;
     }
 }
 const Isaac = new User("i@i.com", "isaac", 32, "123");

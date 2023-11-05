@@ -16,6 +16,7 @@ console.log("typescript is amazing");
 
 //A shorter way to write thesame code
 class User {
+    private _courseCount = 1
     city: string = ''  //if you're adding a city then you need to initialize it
     constructor (
         public email: string, 
@@ -24,10 +25,21 @@ class User {
         private userId: string) {
     }
 
-    
     //adding a getter
     get getAppleEmail(): string{
         return `apple ${this.email}`
+    }
+
+    //adding a setter
+    get courseCount(): number{
+        return this._courseCount
+    }
+
+    set courseCount(courseNum) {
+        if (courseNum <= 1) {
+            throw new Error("Course count should be more than 1")
+        }
+        this._courseCount
     }
 }
 
