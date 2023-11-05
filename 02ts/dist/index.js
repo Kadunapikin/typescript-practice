@@ -22,6 +22,10 @@ class User {
         this.userId = userId;
         this.city = ''; //if you're adding a city then you need to initialize it
     }
+    //adding a getter
+    get getAppleEmail() {
+        return `apple ${this.email}`;
+    }
 }
 const Isaac = new User("i@i.com", "isaac", 32, "123");
 Isaac.city = "kadaCity"; //I can Have access to the city

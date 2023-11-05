@@ -23,6 +23,12 @@ class User {
         public age: number,
         private userId: string) {
     }
+
+    
+    //adding a getter
+    get getAppleEmail(): string{
+        return `apple ${this.email}`
+    }
 }
 
 const Isaac = new User("i@i.com", "isaac", 32, "123");
