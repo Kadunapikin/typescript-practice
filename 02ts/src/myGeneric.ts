@@ -65,3 +65,22 @@ anotherFunction(3, {
     username: '3',
     password: '4'
 });
+
+//using class type generic
+interface Quiz {
+    name: string
+    type: string
+}
+
+interface Course {
+    name: string
+    author: string
+    subject: string
+}
+
+class Sellable<T> {
+    public card: T[] = []
+    addToCard(product:T) {
+        this.card.push(product)
+    }
+}
