@@ -40,9 +40,28 @@ function getSearchProducts<T> (product: T[]): T {
 }
 
 //Coverting same code into an arrow function
-const getMoreSearchProducts =<T> (products: T[]): T => {
+const getMoreSearchProducts =<T,> (products: T[]): T => {
     //do some database operations
     const myIndex = 4
     return products[myIndex]
 }
 
+//Using the type parameter in generic constraint
+interface Database {
+    connection: string,
+    username: string,
+    password: string
+}
+
+function anotherFunction<T, U extends Database> (valOne: T, valTwo: U): object {
+    return {
+        valOne,
+        valTwo
+    }
+}
+
+anotherFunction(3, {
+    connection: '2',
+    username: '3',
+    password: '4'
+});
