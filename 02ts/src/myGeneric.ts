@@ -29,5 +29,20 @@ function identityFour<T> (val: T): T {
     return val
 }
 
-identityFour<Love>({})
+// identityFour<Love>({})
+
+
+//Taking inputs as an array
+function getSearchProducts<T> (product: T[]): T {
+    //do some database operations
+    const myIndex = 3
+    return product[myIndex]
+}
+
+//Coverting same code into an arrow function
+const getMoreSearchProducts =<T> (products: T[]): T => {
+    //do some database operations
+    const myIndex = 4
+    return products[myIndex]
+}
 
