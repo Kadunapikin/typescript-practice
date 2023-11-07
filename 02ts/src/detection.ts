@@ -41,3 +41,16 @@ function logValue(x: Date | string) {
         console.log(x.toLowerCase);
     }
 }
+
+//Using type redicates
+type Fish = {
+    swim: () => void
+}
+
+type Bird = {
+    fly: () => void
+}
+
+function isFish(pet: Fish | Bird) {
+    return (pet as Fish).swim !== undefined
+}
