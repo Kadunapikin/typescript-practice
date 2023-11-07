@@ -51,6 +51,15 @@ type Bird = {
     fly: () => void
 }
 
-function isFish(pet: Fish | Bird) {
+function isFish(pet: Fish | Bird): pet is Fish {   //add "pet is Fish" as return type if your sure the pet is Fish to be able to use the function and not have a boolean return type but a specific type
     return (pet as Fish).swim !== undefined
+}
+
+function getFood(pet: Fish | Bird) {
+    if (isFish(pet)) {
+        pet
+        return "Fish food"   
+    }
+    pet
+    return "Bird food"
 }
